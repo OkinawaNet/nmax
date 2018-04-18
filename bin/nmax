@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "nmax"
+
+if (ARGV[0])
+  array_size = ARGV[0].to_s.to_i
+  puts Nmax.nmax_text(STDIN, array_size)
+else
+  puts 'Enter the count of max numbers'
+end
